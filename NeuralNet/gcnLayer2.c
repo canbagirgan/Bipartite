@@ -398,6 +398,9 @@ void gcn_forward(gcnLayer* layer, int option, Timer *time, Stats *stats) {
         case 0:
             aggregate(layer, layer->input->mat, temp, FORWARD, time, stats);
             break;
+        case 1:
+            aggregate_shuffled(layer, layer->input->mat, temp, FORWARD, time, stats);
+            break;
         default:
             break;
     }

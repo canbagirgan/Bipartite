@@ -1,6 +1,6 @@
 CC=mpicc
 
-CFLAGS=-Wall -O0 -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -DIRECV -Wextra
+CFLAGS=-Wall -O3 -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -DIRECV -DISEND
 LIBS=
 SRC_FILE= src/typedef.c src/basic2.c src/fileio.c
 MAT_FILE= Matrix/Matrix.c Matrix/sparseMat2.c

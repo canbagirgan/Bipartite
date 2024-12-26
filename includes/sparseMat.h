@@ -5,6 +5,6 @@
 #include "gcnLayer.h"
 
 void aggregate(gcnLayer* layer, Matrix* X, Matrix* Y, int step, Timer *time, Stats *stats);
-
+void aggregate_shuffled(gcnLayer* layer, Matrix* X, Matrix* Y, int step, Timer *time, Stats *stats);
 
 #endif // SPARSEMAT_H_INCLUDED
